@@ -1,0 +1,178 @@
+
+* {
+    /* Engloba los elementos del documento */
+
+    padding: 0;/* Establece el valor del relleno todos los elementos. */
+
+    margin: 0;/* Establece el valor de margen para todos los elementos. */
+
+    font-family: sans-serif; /* fuente del texto */
+
+    margin-top: 0;/* margen superior de todos los elemtentos */
+
+  }
+
+  ul {
+    /* Selecciona todos los elementos de la lista no ordenada. */
+    list-style: none;/* Elimina la viñeta predeterminada de los elementos. */
+   background-color: black;/* Establece el color de fondo de los elementos de la lista*/
+
+  }
+
+  ul li {
+    /* Selecciona los elementos de la lista que estan dentro del menu desplegable. */
+    display: inline-block;/* Muestra los elementos en bloque alineados horizontalmente */
+    position: relative; /* Establece una posicion fija */
+    margin-top: 25px; /* margen superior de todos los elemtentos */
+  }
+
+  ul li a {
+    /* selecciona los enlaces que estan en la lista desplegable */
+    display: block; /* hacen que se muestre los bloques completos */
+    padding: 20px 30px;  /* XY relleno en la parte superior e inferior y en los lados */
+    color: #FFF; /* color del texto en los enlaces */
+    text-decoration: none; /* Elimina los subrayados */
+    text-align: center; /* texto al centro */
+    font-size: 20px;   /* tamaño de la fuente de los enlaces */
+  }
+
+  ul li ul.dropdown li {
+    /* al pasar el cursor, despliega la lista*/
+    display: block;
+  }
+
+
+  ul li ul.dropdown {
+    
+    width: 200%;/* Ancho de los elementos */
+   background: 303232;/* color de los elementos */
+    position: absolute; /* permite colocarlos en cualquier lugar de la lista */
+    display: none;  /* oculta los elementos de la lista de anidados */
+  }
+
+  ul li a:hover {
+    /* al pasar el cursor sobre ellos, su color cambia */
+    background: #3694C7;
+  }
+
+  ul li:hover ul.dropdown {
+    /* permite clikear sobre los elements del hover */
+    display: block;
+  }
+
+
+.footer {
+/* selecciona la clase footer */
+ background-color: black; /* color de fondo */
+  height: 50px;   /* Altura de los elementos en la clase */
+  display: flex;  /* elementos en una caja flexible */
+  justify-content: center;  /* centra horizontalmente el footer */
+  align-items: center;     /* centra verticalmente el contenido dentro del footer */
+  position: fixed;    /* posicion fija en la ventana del navegador */
+  bottom: 0;    /* Alinea el footer en la parte inferior de la ventana */
+  left: 0;  /* Alinea el footer en el extremo izquierdo de la ventana */
+  width: 100%;  /* Ancho del footer */
+  color: whitesmoke; /* color de los elementos dentro del footer */
+  font-size: 100px; /* tamaño de la fuente dentro del footer */
+  margin-bottom: 0; /* margen inferior */
+  padding-bottom: 0; /* margen de relleno inferior*/
+  overflow: hidden; /* oculta contenido que se desborde fuera del footer */
+  top: calc(100vh - 50px); /* Ajusta el valor de top según la altura del footer */
+}
+
+.footer ul li {
+  transform: translateY(-25px);
+}
+
+
+.logo{
+      /* selecciona elementos de la clase logo */
+     display: flex;  /* se muestra en una caja flexible */
+    justify-content: flex-end; /* manda el logo al extremo derecho totalmente */
+}
+
+.logo img {
+  /* selecciona la imagen dentro del elemento logo */
+    height: 100px; /* altura de la imagen */
+    margin-right: 10px;   /* margen derecho */
+    margin-top: -100px;    /* margen superior */
+}
+
+
+
+body {
+ 
+    background-image: url("https://i.postimg.cc/sf87FZj3/Degradado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+/*Codigo para que la imagen se quede fija mientras bajamos*/
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Manjari', sans-serif;
+    
+}
+ esto es para testear nada más los colores y atributos de algo que necesite hacer 
+ .container{
+    font-size: 3rem;
+    color: gold
+ } 
+
+
+
+
+
+
+
+
+div.galeria {
+  line-height: 150px;
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+  margin: 100px 60px;
+    float: left;
+    width: 800px;
+   background-attachment: fixed;
+   align-content: center;
+
+   
+}
+
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+div.galeria:hover {
+    border: 1px solid lightcoral;
+    transform: rotate(-10deg);
+}
+
+
+div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 10px;
+}
+
+h1 {
+    color: black;
+    text-shadow: 1px 2px 2px black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .container-card{
+    flex-wrap: wrap;
+  }
+  .card{
+    margin: 15px;
+  }
+}

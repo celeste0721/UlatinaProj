@@ -1,0 +1,87 @@
+Comandos para CSS
+
+Font:define las propiedades relacionadas con las fuentes y 
+cómo se cargan los recursos de fuentes. Le permite definir el estilo de una fuente, 
+como su familia, tamaño y peso, altura de línea {
+
+	font-family: tipo de letra
+ 	 font-style: italic;estilo de la letra tipo negrita,cursiva
+ 	 font-weight: 100; altura de la fuente
+  	font-variant-ligatures: normal; fondos de la letra
+  	font-size: 2rem; tamanio
+  	letter-spacing: 1px; espacio entre ellas
+}
+
+Margin:La propiedad abreviada margin CSS establece el área de
+ margen en los cuatro lados de un elemento.{
+margin-top: Margen superior
+margin-right	Derecho
+margin-bottom	inferior
+margin-left	Izquierdo
+
+
+}
+
+
+display:  establece si un elemento se trata como un bloque o un elemento en línea y el diseño utilizado para sus elementos secundarios, 
+como el diseño de flujo, la cuadrícula o la flexión.{
+
+display: block; bloque de pantalla
+display: inline; en linea
+display: inline-block;bloque alineado con distancia
+display: flex;	flexible
+display: inline-flex; en linea y que sea flexible
+display: grid;	cuadriculado hacia abajo
+display: inline-grid;	cuadriculado en linea
+display: flow-root;	
+
+
+}
+
+    display: inline-block;  
+    min-height: 40px;		ALTURA MINIMA
+    width: 50px;			ANCHO
+    background-color: #456789;	COLOR DE FONDO
+    margin: 0 15px 20px 0;		MARGENES
+    text-align: center;		ALINEADO DEL TEXTO
+    line-height: 40px;		ALTURA DE LA LINEA
+    border-radius: 50%;		BORDE DEL RADIO
+    color: bisque;			COLOR
+    font-size: 20px;			TAMANIO DE LA FUENTE
+    margin-bottom: 0px;		MARGEN INFERIOR
+    justify-content: space-between ;		ESPACIO ENTRE
+    align-items: center;				ALINEAR ELEMENTOS
+
+
+PADDING:establece el área de relleno en los cuatro lados de un elemento a la vez. {
+
+padding-top		SUPERIOR
+padding-right		DERECHA
+padding-bottom		VACIO
+padding-left		IZQUIERDA
+
+
+}
+
+POSITION:establece cómo se coloca un elemento en un documento. Las propiedades superior, derecha, 
+inferior e izquierda determinan la ubicación final de los elementos posicionados.{
+
+position: static;		ESTATICA
+position: relative;		Un poco salida
+position: absolute;		sobre
+position: fixed;			intercambiada
+position: sticky;		Delante del texto
+
+}
+
+KEYFRAMES:controla los pasos intermedios en una secuencia de animación CSS 
+definiendo estilos para fotogramas clave (o waypoints) a lo largo de la secuencia de animación{
+
+
+
+
+}
+
+
+
+
