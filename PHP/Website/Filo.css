@@ -1,0 +1,174 @@
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+   background-color: black;
+
+  }
+
+  ul li {
+    display: inline-block;
+    position: relative;
+    margin-top: 25px;
+  }
+
+  ul li a {
+    display: block;
+    padding: 20px 30px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  ul li ul.dropdown li {
+    display: block;
+  }
+
+
+  ul li ul.dropdown {
+    width: 200%;
+   background: 303232;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+
+  ul li a:hover {
+    background: #3694C7;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+
+
+.footer {
+/* selecciona la clase footer */
+ background-color: black; /* color de fondo */
+  height: 50px;   /* Altura de los elementos en la clase */
+  display: flex;  /* elementos en una caja flexible */
+  justify-content: center;  /* centra horizontalmente el footer */
+  align-items: center;     /* centra verticalmente el contenido dentro del footer */
+  position: fixed;    /* posicion fija en la ventana del navegador */
+  bottom: 0;    /* Alinea el footer en la parte inferior de la ventana */
+  left: 0;  /* Alinea el footer en el extremo izquierdo de la ventana */
+  width: 100%;  /* Ancho del footer */
+  color: whitesmoke; /* color de los elementos dentro del footer */
+  font-size: 100px; /* tamaño de la fuente dentro del footer */
+  margin-bottom: 0; /* margen inferior */
+  padding-bottom: 0; /* margen de relleno inferior*/
+  overflow: hidden; /* oculta contenido que se desborde fuera del footer */
+  top: calc(100vh - 50px); /* Ajusta el valor de top según la altura del footer */
+}
+
+.footer ul li {
+  transform: translateY(-25px);
+}
+
+
+
+.logo{
+     display: flex;
+    justify-content: flex-end;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+    margin-top: -100px; 
+}
+
+
+.banner {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .info {
+  font-size: 24px;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    
+}
+
+
+.container>.content {
+    grid-column: span 30;
+    grid-row: span 4;
+    margin-top: 574px;
+}
+
+.content>.article {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 70px;
+    color: #dfe6e9
+}
+
+.content .article h1,.content .article p {
+    margin-top: 2px;
+    padding: 10px;
+    
+}
+
+
+
+body {
+ 
+    background-image: url("https://i.postimg.cc/zXPwGgDt/lavado2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+/*Codigo para que la imagen se quede fija mientras bajamos*/
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Manjari', sans-serif;
+    
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+      margin-top: 100px;
+}
+
+.content {
+  text-align: center;
+
+}
+
+
+.article h1, .article p {
+  margin-top: 2px;
+  padding: 10px;
+ text-decoration: none; /* Agregar esta línea */
+ border-bottom: none;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,272 @@
+* {
+    /* Engloba los elementos del documento */
+
+    padding: 0;/* Establece el valor del relleno todos los elementos. */
+
+    margin: 0;/* Establece el valor de margen para todos los elementos. */
+
+    font-family: sans-serif; /* fuente del texto */
+
+    margin-top: 0;/* margen superior de todos los elemtentos */
+
+  }
+
+  ul {
+    /* Selecciona todos los elementos de la lista no ordenada. */
+    list-style: none;/* Elimina la viñeta predeterminada de los elementos. */
+   background-color: black;/* Establece el color de fondo de los elementos de la lista*/
+
+  }
+
+  ul li {
+    /* Selecciona los elementos de la lista que estan dentro del menu desplegable. */
+    display: inline-block;/* Muestra los elementos en bloque alineados horizontalmente */
+    position: relative; /* Establece una posicion fija */
+    margin-top: 25px; /* margen superior de todos los elemtentos */
+  }
+
+  ul li a {
+    /* selecciona los enlaces que estan en la lista desplegable */
+    display: block; /* hacen que se muestre los bloques completos */
+    padding: 20px 30px;  /* XY relleno en la parte superior e inferior y en los lados */
+    color: #FFF; /* color del texto en los enlaces */
+    text-decoration: none; /* Elimina los subrayados */
+    text-align: center; /* texto al centro */
+    font-size: 20px;   /* tamaño de la fuente de los enlaces */
+  }
+
+  ul li ul.dropdown li {
+    /* al pasar el cursor, despliega la lista*/
+    display: block;
+  }
+
+
+  ul li ul.dropdown {
+    
+    width: 200%;/* Ancho de los elementos */
+   background: 303232;/* color de los elementos */
+    position: absolute; /* permite colocarlos en cualquier lugar de la lista */
+    display: none;  /* oculta los elementos de la lista de anidados */
+  }
+
+  ul li a:hover {
+    /* al pasar el cursor sobre ellos, su color cambia */
+    background: #3694C7;
+  }
+
+  ul li:hover ul.dropdown {
+    /* permite clikear sobre los elements del hover */
+    display: block;
+  }
+
+.footer {
+/* selecciona la clase footer */
+ background-color: black; /* color de fondo */
+  height: 50px;   /* Altura de los elementos en la clase */
+  display: flex;  /* elementos en una caja flexible */
+  justify-content: center;  /* centra horizontalmente el footer */
+  align-items: center;     /* centra verticalmente el contenido dentro del footer */
+  position: fixed;    /* posicion fija en la ventana del navegador */
+  bottom: 0;    /* Alinea el footer en la parte inferior de la ventana */
+  left: 0;  /* Alinea el footer en el extremo izquierdo de la ventana */
+  width: 100%;  /* Ancho del footer */
+  color: whitesmoke; /* color de los elementos dentro del footer */
+  font-size: 100px; /* tamaño de la fuente dentro del footer */
+  margin-bottom: 0; /* margen inferior */
+  padding-bottom: 0; /* margen de relleno inferior*/
+  overflow: hidden; /* oculta contenido que se desborde fuera del footer */
+  top: calc(100vh - 50px); /* Ajusta el valor de top según la altura del footer */
+}
+
+.footer ul li {
+  transform: translateY(-25px);
+}
+
+
+
+.logo{
+      /* selecciona elementos de la clase logo */
+     display: flex;  /* se muestra en una caja flexible */
+    justify-content: flex-end; /* manda el logo al extremo derecho totalmente */
+}
+
+.logo img {
+  /* selecciona la imagen dentro del elemento logo */
+    height: 100px; /* altura de la imagen */
+    margin-right: 10px;   /* margen derecho */
+    margin-top: -100px;    /* margen superior */
+}
+
+ /* define el estilo del banner en la página*/
+
+.banner {
+  background-image: url("https://i.postimg.cc/RV3NQKhr/Lavado.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: banner 10s infinite linear alternate;  /* cambia animadamente a través de diferentes imágenes*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+ /*  La animación se repite infinitamente y se ejecuta linealmente en sentido alterno.*/
+
+@keyframes banner {
+   /* cambia el fondo del banner en diferentes puntos del tiempo usando porcentajes*/
+  0%, 20% {
+    background-image: url("https://i.postimg.cc/RV3NQKhr/Lavado.png");
+  }
+  25%, 45% {
+    background-image: url("https://i.postimg.cc/zXPwGgDt/lavado2.jpg");
+  }
+  50%, 70% {
+    background-image: url("https://i.postimg.cc/g2FkV71R/P.jpg");
+  }
+  75%, 100% {
+    background-image: url("https://i.postimg.cc/GhsmsRgd/Principal.jpg");
+  }
+}
+
+
+ /* coloca el fondo del banner mas opaco*/
+.capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+ /*  contiene el texto dentro del banner, centrado vertical y horizontalmente.*/
+.banner {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* aplica estilos a los elementos dentro de la clase */
+.banner .info {
+  font-size: 24px;
+}
+
+
+.info {
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.info h1 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.info p {
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: none;
+  background: #3088e0;
+  padding: 16px 37px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+
+ /* define los estilos para un formulario.*/
+
+
+form{
+    margin: auto;
+    padding: 80px 10px;
+    height: 470px;
+    width: 300px;
+    min-width: 290px;
+    border: solid #3b3b3b 1px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+
+ /*  define el estilo para el título del formulario*/
+
+form h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #f9f9f9;
+}
+
+
+ /* define el estilo para los párrafos dentro del formulario*/
+form p {
+  color: #c7c7c7;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+ /* define los estilos para los campos de entrada en el formulario. */
+
+form input{
+    width: 100%;
+    margin: 17px 0;
+    height: 60px;
+    padding: 2px;
+    border-radius: 4px;
+    outline: none;
+    border: solid #181818 1px;
+    color: #999898;
+    background-color: #090909;
+}
+
+
+  /*define los estilos para los botones dentro del formulario. */
+
+form button{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: #cecece solid 1px;
+    background-color: #000000;
+    color: #bebebe;
+    cursor: pointer;
+}
+
+
+ /*  define los estilos para el botón cuando se coloca el cursor sobre él. */
+form button:hover{
+    background-color: #303030;
+}
+
+
+
+ /* consulta de medios que se aplica cuando el ancho de  la pantalla se encuentra dentro del rango definido 320px a 768px */
+@media only screen and (min-width:320px) and (max-width:768px){
+  .container-card{
+     /* cuando la pantalla tiene esos tamanos se envleuven en filas */
+    flex-wrap: wrap;
+  }
+
+   /* cuando la pantalla tiene ese tamanio se reduce el margen de las tarjetas a 15p para adaptarse al diseno mas pequeno*/
+  .card{
+    margin: 15px;
+  }
+}

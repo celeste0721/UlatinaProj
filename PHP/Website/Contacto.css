@@ -1,0 +1,192 @@
+  * {
+    /* Engloba los elementos del documento */
+
+    padding: 0;/* Establece el valor del relleno todos los elementos. */
+
+    margin: 0;/* Establece el valor de margen para todos los elementos. */
+
+    font-family: sans-serif; /* fuente del texto */
+
+    margin-top: 0;/* margen superior de todos los elemtentos */
+
+  }
+
+  ul {
+    /* Selecciona todos los elementos de la lista no ordenada. */
+    list-style: none;/* Elimina la viñeta predeterminada de los elementos. */
+   background-color: black;/* Establece el color de fondo de los elementos de la lista*/
+
+  }
+
+  ul li {
+    /* Selecciona los elementos de la lista que estan dentro del menu desplegable. */
+    display: inline-block;/* Muestra los elementos en bloque alineados horizontalmente */
+    position: relative; /* Establece una posicion fija */
+    margin-top: 25px; /* margen superior de todos los elemtentos */
+  }
+
+  ul li a {
+    /* selecciona los enlaces que estan en la lista desplegable */
+    display: block; /* hacen que se muestre los bloques completos */
+    padding: 20px 30px;  /* XY relleno en la parte superior e inferior y en los lados */
+    color: #FFF; /* color del texto en los enlaces */
+    text-decoration: none; /* Elimina los subrayados */
+    text-align: center; /* texto al centro */
+    font-size: 20px;   /* tamaño de la fuente de los enlaces */
+  }
+
+  ul li ul.dropdown li {
+    /* al pasar el cursor, despliega la lista*/
+    display: block;
+  }
+
+
+  ul li ul.dropdown {
+    
+    width: 200%;/* Ancho de los elementos */
+   background: 303232;/* color de los elementos */
+    position: absolute; /* permite colocarlos en cualquier lugar de la lista */
+    display: none;  /* oculta los elementos de la lista de anidados */
+  }
+
+  ul li a:hover {
+    /* al pasar el cursor sobre ellos, su color cambia */
+    background: #3694C7;
+  }
+
+  ul li:hover ul.dropdown {
+    /* permite clikear sobre los elements del hover */
+    display: block;
+  }
+
+
+.footer {
+
+ background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  top: calc(100vh - 50px); /* Ajusta el valor de top según la altura del footer */
+
+}
+
+.footer ul li {
+  transform: translateY(-25px);
+}
+
+
+
+.logo{
+      /* selecciona elementos de la clase logo */
+     display: flex;  /* se muestra en una caja flexible */
+    justify-content: flex-end; /* manda el logo al extremo derecho totalmente */
+}
+
+.logo img {
+  /* selecciona la imagen dentro del elemento logo */
+    height: 100px; /* altura de la imagen */
+    margin-right: 10px;   /* margen derecho */
+    margin-top: -100px;    /* margen superior */
+}
+
+
+body {
+
+  /* selecciona el cuerpo del documento */
+    background-image: url("https://i.postimg.cc/sf87FZj3/Degradado.jpg"); /* imagen de fondo */
+    background-repeat: no-repeat;  /* no se repita */
+    background-size: contain; /* se adiera completamente dentro del cuerpo */
+
+/*Codigo para que la imagen se quede fija mientras bajamos*/
+    background-size: cover;
+    background-attachment: fixed; /* fija la imagen a la pantalla mientras nos movemos */
+    font-family: 'Manjari', sans-serif; /* utiliza esta fuente de respaldo por si las otras fallan */
+    
+}
+
+
+
+ /* clase del contenedor carta */
+
+.container-card{
+  width: 100%;  /* la anchura del contenedor es de todo el ancho disponible */
+  display: flex;  /* flexbox para organizar los elementos internos*/
+  max-width: 1100px;   /* la anchura maxima del contenedor*/
+  margin: auto;   /* el contenedor se centra horizontalmente mediante margenes automaticos*/
+}
+
+ /* encabezado de las cartas*/
+.title-cards{
+
+  width: 100%;  /* la anchura del contenedor es de todo el ancho disponible */
+  max-width: 1080px; /* la anchura maxima del contenedor*/
+  margin: auto; /* el contenedor se centra horizontalmente mediante margenes automaticos*/
+  padding: 20px; /* relleno superior para el titulo del contenedor*/
+  margin-top: 20px;  /* margen para separar el titulo de otras secciones*/
+  text-align: center; /* texto del elemento se alinea al centro*/
+  color: #7a7a7a; /*color del texto dentro de la carta*/
+}
+
+/* carta individual*/
+.card{
+  width: 100%; /* la anchura del contenedor es de todo el ancho disponible */
+  margin: 20px;  /* margen dentro de la carta*/
+  border-radius: 6px;  /* radio de borde para las esquinas redondeadas*/
+  overflow: hidden;  /* algo que desborde la tarjeta se oculta*/
+  background:#fff;  /* color de fondo*/
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);    /* sombra a las tarjetas mediante la propiedad box-shadow*/
+  transition: all 400ms ease-out;   /* transicion*/
+  cursor: default;  /* el cursor no altera nada en las tarjetas*/
+}
+
+ /* carta sobre el cursor*/
+.card:hover{
+
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);  /* la sombra se modifica encima del cursos*/
+  transform: translateY(-3%);  /* la tarjeta se desplaza arriba cuanco el cursor esta sobre*/
+}
+.card img{
+   /* ajuste de la imagen dentro  del contenedor*/
+  width: 100%; /* la imagen se ajusta a lo ancho del contenedor*/
+  height: 210px;  /* se establece una altura fija de 210px para las imagenes*/
+}
+ /* se aplica al texto dentro de las cartas*/
+.card .contenido-card{
+  padding: 15px;  /* relleno en el contenido*/
+  text-align: center;  /* texto al centro */
+}
+.card .contenido-card h3{
+   /* se aplica a los titulos dentro del contenido de las tarjetas*/
+  margin-bottom: 15px;  /* separa el titulo del texto*/
+  color: #7a7a7a;  /* color */
+}
+.card .contenido-card p{
+   /* se aplica a los parrafos dentro del contenido*/
+  line-height: 3;  /* espacio entre lineas*/
+  color: #6a6a6a;  /* color de las letras */
+  font-size: 20px;  /* tamanio de la fuente en 20px*/
+  margin-bottom: 5px;  /* separa el parrafo del texot sigiente*/
+}
+
+ /* consulta de medios que se aplica cuando el ancho de  la pantalla se encuentra dentro del rango definido 320px a 768px */
+@media only screen and (min-width:320px) and (max-width:768px){
+  .container-card{
+     /* cuando la pantalla tiene esos tamanos se envleuven en filas */
+    flex-wrap: wrap;
+  }
+
+   /* cuando la pantalla tiene ese tamanio se reduce el margen de las tarjetas a 15p para adaptarse al diseno mas pequeno*/
+  .card{
+    margin: 15px;
+  }
+}

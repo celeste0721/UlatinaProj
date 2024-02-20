@@ -1,0 +1,1259 @@
+								Cuaderno de ejercicios
+
+While pagina 29
+Libreria 32
+
+Analisis de doble formulario con 2 txt diferentes
+pag34-37
+
+colocar contraseña 38-39
+
+Encuesta 45-46
+
+Introducir datos a BD 56-59
+
+Realizar consulta 60-61
+
+Eliminar datos 61-62
+
+Actualizar datos 63-64
+
+Update 65-66
+
+Count 67
+
+Group by 70
+
+Fechas 86-87
+
+Administracion de fe y h 87-88
+
+----------------------------------------------------------------------------------------------------------
+
+Ejercicios de la pagina 1 hasta 28
+
+
+
+<html>
+<head>
+<title>Prueba</title>
+</head>
+
+<body>
+
+<?php
+
+$nombre="Maria";
+
+echo "<b> Hola mundo, hola $nombre </b> ";
+
+echo "<h1> NOTA a $nombre </h1>";
+ 
+ echo "<p> esto es un parrafo que deberia de ubicarse de bajp del titulo nota para ver si es cierto que las etiquetas  de html sirven. <br> 
+
+La famosa banda de rock se separó, al menos por un tiempo.<br> Los integrantes declararon en diversos medios que no hubo una pelea, sino que quieren trabajar un tiempo como solitas. <br>Además, en una rueda de prensa, el representante dijo que es probable que el año próximo los músicos se vuelvan a juntar para hacer una gira.  </p>";
+
+
+
+echo "<h1>Array declarado uno a uno</h1>";
+
+$dia[0]="6";
+$dia[1]="Martes";
+$dia[2]="Miercoles";
+$dia[3]="Jueves";
+$dia[4]="Viernes";
+$dia[5]="sabado";
+$dia[6]="domingo";
+
+
+echo"El dia de $dia[0], estaremos vendiendo frijoles <br>
+El dia $dia[1], estaremos vendiendo refrescos <br>
+Los dias $dia[2],$dia[3],$dia[4],estaremos ofreciendo servicio normal <br>
+Los dias $dia[5],$dia[6], esta cerrado por descanso <br>  ";
+
+echo "<h1>Array declarado en forma de parametro</h1>";
+
+$semana=array("lun","mar","mie","jue","vier","sab","dom");
+
+echo" <br> El dia de $semana[0], estaremos vendiendo frijoles <br>
+El dia $semana[1], estaremos vendiendo refrescos <br>
+Los dias $semana[2],$semana[3],$semana[4],estaremos ofreciendo servicio normal <br>
+Los dias $semana[5],$semana[6], esta cerrado por descanso <br>  ";
+
+
+echo "<h1>Operaciones matematicas</h1>";
+
+$a="8";
+$b="3";
+
+echo $a + $b, "<br>";
+echo $a - $b, "<br>";
+echo $a * $b, "<br>";
+echo $a / $b, "<br>";
+
+$a++; 
+echo $a+$a,"<br>"; 
+$b--; 
+echo $b-$a,"<br>";
+
+
+echo "<h1>Operaciones matematicas de comparacion</h1>";
+
+/* Primero declaramos las variables */ 
+ $precioneto = 101.98; 
+ $iva = 0.196; 
+ $resultado = $precioneto * $iva; 
+ echo "El precio es de "; 
+ echo $precioneto; 
+ echo " y el IVA el "; 
+ echo $iva; 
+ echo "% <br>"; 
+ echo "Resultado: " ; 
+ echo round($resultado,2); 
+ echo " con ROUND() <br>"; 
+ echo $resultado; 
+ echo " normal \n"; 
+ echo "<br><br>"; 
+ $resultado2 = sprintf("%01.2f", $resultado); 
+ echo "Usando la funcion SPRINTF se ve asi: "; 
+ echo $resultado2;
+
+
+echo "<h1>Uso del IF, else if, ELSE</h1>";
+
+
+$a=560;
+$b=50;
+
+ echo "Valor de a: ",$a," y el valor de b:",$b,"<br>";
+
+if($a<$b){
+
+echo"a es menor que b";
+
+}elseif ($a==$b){
+
+echo "a es igual  que b";
+
+
+}else{
+
+echo "a no es menor que b";
+
+}
+
+
+echo "<h1>Ejercicio 6 </h1>";
+echo "<p>Sabiendo que la funcion RAND nos retorna un valor aleatorio entre un rango de dos enteros: </p>";
+
+
+$num = rand(1,100); 
+
+if($num>50){
+
+echo"El numero es mayor a 50";
+
+}elseif ($num==50){
+
+echo "El numero es igual a 50";
+
+
+}else{
+
+echo "El numero es menor que 50";
+
+}
+
+echo"El numero random es: $num";
+
+
+echo "<h1>Ejercicio 7 </h1>";
+echo "<p> Definir una variable de cada ipo: integer, double, string y boolean. Luego imprimirlas en la pagina, una 
+por linea.  </p>";
+
+$interger = 10;
+$double = 3.14;
+$string = "Hola, mundo!";
+$boolean = true;
+
+echo $interger . "<br>";
+echo $double . "<br>";
+echo $string . "<br>";
+echo $boolean . "<br>";
+
+echo "<h1>Ejercicio 8 </h1>";
+echo "<p> Definir tres variables enteras. Luego definir un string que incorpore dichas variables y las sustituya en 
+tiempo de ejecucion. Recordar que una variable se sustituye cuando el string esta encerrado por 
+comillas dobles:  </p>";
+
+
+$precio = 90;
+$cantidad = 2;
+$total = $precio * $cantidad;
+
+echo "El precio de cada computadora es $precio. Has comprado $cantidad computadoras en total, por lo tanto, el precio total es $total.";
+
+
+
+
+echo "<h1>Ejemplo de SWITCH </h1>";
+echo "<p> Con datos quemados </p>";
+
+
+$dia = 3;
+
+switch ($dia) {
+    case 1:
+        echo "Lunes";
+        break;
+    case 2:
+        echo "Martes";
+        break;
+    case 3:
+        echo "Miércoles";
+        break;
+    case 4:
+        echo "Jueves";
+        break;
+    case 5:
+        echo "Viernes";
+        break;
+    default:
+        echo "Fin de semana";
+        break;
+}
+
+
+?>
+
+<body>
+
+</html>
+
+
+					ejercicios resueltos en clase
+
+
+
+
+Dias que faltan para navidad:
+
+
+<html>
+<head>
+<title>Ejemplo de PHP</title>
+</head>
+<body>
+<h1>Ejemplo</h1>
+<form action="" method="GET">
+Introduzca una fecha: <input type="date" name="fecha"><br>
+<input type="submit" value="Enviar">
+</form>
+ 
+<?php
+if(isset($_GET['fecha'])) {
+    
+    $selectedDate = $_GET['fecha'];
+ 
+    
+    $currentYear = date('Y');
+ 
+    
+    $targetDate = $currentYear . '-12-25';
+    
+    
+    $remainingTime = strtotime($targetDate) - strtotime($selectedDate);
+    
+    
+    $remainingDays = round($remainingTime / (60 * 60 * 24));
+    $remainingMonths = round($remainingDays/30);
+    $remainingDias = $remainingDays%30;
+ 
+    
+    echo "Faltan " . $remainingMonths . " meses y " . $remainingDias . " dias para Navidad.";
+}
+?>
+</body>
+</html>
+
+
+
+
+
+
+Formula para sacar los catetos:
+
+
+
+<!-- Manual de PHP -->
+<html>
+ 
+<head>
+    <title>Ejemplo de PHP</title>
+</head>
+ 
+<body>
+    Parte de HTML normal.
+ 
+    <form method="POST">
+ 
+        Ingrese el cateto: <input type="number" name="number_value1"><br>
+        Ingrese el cateto: <input type="number" name="number_value2"><br>
+ 
+        <input type="submit" value="submit">
+    </form>
+ 
+    <BR><BR>
+    <?php
+    $x = $_POST['number_value1'];
+    $y = $_POST['number_value2'];
+    $h =  sqrt($x**2 + $y**2);
+    
+    echo $h;
+    ?>
+</body>
+ 
+</html>
+
+
+
+
+
+Tipo de Cambio de las monedas:
+
+
+
+<!-- Manual de PHP -->
+<html>
+ 
+<head>
+    <title>Ejemplo de PHP</title>
+</head>
+ 
+<body>
+    Parte de HTML normal.
+ 
+    <form method="POST">
+ 
+        Ingrese el valor de la moneda: <input type="number" step="any" name="number_value1"><br>
+ 
+        <input type="submit" value="submit">
+    </form>
+ 
+    <BR><BR>
+    <?php
+    $h = $_POST['number_value1'];
+    
+    echo "Dolares: ".$h * 0.0018;
+    echo "Euro: ".$h * 0.0017;
+    echo "Yen: ".$h * 0.26;
+    echo "krone: ".$h * 0.019;
+    echo "Pound sterling: ".$h * 0.0014;
+    echo "Colombian Peso: ".$h * 7.66;
+    echo "Mexican Peso: ".$h * 0.032;
+    echo "Argentine Peso: ".$h * 0.46;
+    echo "Chilean Peso: ".$h * 1.47;
+    echo "Colombian Peso: ".$h * 7.66 ;
+
+
+ 
+    ?>
+</body>
+ 
+</html>
+
+
+
+Juego de numeros random:
+
+
+<?php
+$numeroAdivinar = rand(1, 5); 
+$intentos = 0;
+$maxIntentos = 3;
+ 
+if (isset($_POST['adivinar'])) {
+    $numeroUsuario = $_POST['numero'];
+ 
+    if ($numeroUsuario == $numeroAdivinar) {
+        echo "Felicidades Adivinaste el numero $numeroAdivinar.";
+        exit;
+    } else {
+        $intentos++;
+        if ($intentos < $maxIntentos) {
+            echo "Numero incorrecto. Intenta de nuevo.<br>";
+        } else {
+            echo "Lo siento, has agotado tus $maxIntentos intentos. El numero era $numeroAdivinar.";
+            exit;
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adivina el número</title>
+</head>
+<body>
+    <h1>Adivina el número</h1>
+    <form method="POST" action="">
+        <label>Ingresa un número entre 1 y 5:</label>
+        <input type="number" name="numero" min="1" max="5" required>
+        <br>
+        <input type="submit" name="adivinar" value="Adivinar">
+    </form>
+</body>
+</html>  
+
+
+
+
+Fecha y hora local:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fecha y Hora</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fecha y Hora Actual</h1>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Mes</th>
+            <th>Año</th>
+            <th>Hora</th>
+        </tr>
+        <tr>
+            <td><?php echo date('d'); ?></td>
+            <td><?php echo date('m'); ?></td>
+            <td><?php echo date('Y'); ?></td>
+            <td><?php echo date('H:i:s'); ?></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+Ejercicio para contar las letras de un parrafo
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 05</title>
+</head>
+<body>
+ 
+    <form method="POST" action="">
+        <label>Escribe un párrafo:</label>
+        <textarea name="parrafo" rows="5" cols="40" required></textarea><br><br>
+        <input type="submit" value="Contar letras">
+    </form>
+ 
+    <?php
+    if (isset($_POST['parrafo'])) {
+        $parrafo = $_POST['parrafo'];
+        $cantidadLetras = strlen(str_replace(' ', '', $parrafo));
+        echo "El párrafo tiene " . $cantidadLetras . " letras (sin contar espacios).";
+    }
+?>
+ 
+</body>
+</html>
+
+
+
+Ejercio de video:
+
+
+
+<!DOCTYPE html> 
+
+
+<html> 
+<body> 
+ 
+<div style="text-align:center"> 
+ <button onclick="playPause()">Play/Pause</button> 
+ <button onclick="makeBig()">Big</button>
+ <button onclick="makeSmall()">Small</button>
+ <button onclick="makeNormal()">Normal</button>
+ <br><br>
+ <video id="video1" width="420">
+ <source src="heroes fight.mp4" type="video/mp4">
+ <source src="mov_bbb.ogg" type="video/ogg">
+ Your browser does not support HTML video.
+ </video>
+</div> 
+ 
+<script> 
+var myVideo = document.getElementById("video1"); 
+ 
+function playPause() { 
+ if (myVideo.paused) 
+ myVideo.play(); 
+ else 
+ myVideo.pause(); 
+} 
+ 
+function makeBig() { 
+ myVideo.width = 560; 
+} 
+ 
+function makeSmall() { 
+ myVideo.width = 320; 
+} 
+ 
+function makeNormal() { 
+ myVideo.width = 420; 
+} 
+</script> 
+ 
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+								Pagina web, ejercicios
+
+
+Formulario devolviendo nombre
+
+pag:1
+
+<html>
+
+<head>
+  <title>Formulario de entrada del dato</title>
+</head>
+
+<body>
+  <form method="post" action="Eje1.1.php">
+    Ingrese su nombre:
+    <input type="text" name="nombre">
+    <br>
+
+     Ingrese su edad:
+    <input type="text" name="edad">
+    <br>
+
+
+    <input type="submit" value="confirmar">
+  </form>
+</body>
+
+</html>
+
+
+
+pag 2:
+
+
+<html>
+
+<head>
+  <title>Captura de datos del form</title>
+</head>
+
+<body>
+  <?php
+  echo "El nombre ingresado es:";
+  echo $_REQUEST['nombre'],  "<br>";
+
+  if($_REQUEST['edad']>=18){
+
+  echo"La persona es mayor de edad";
+
+  }else{
+
+  echo"La persona es menor de edad";
+
+  }
+
+  ?>
+</body>
+
+</html>
+
+
+
+
+
+Formulario con Checkbox:
+
+
+Pag:1
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <form method="post" action="Eje1.1.php">
+    Ingrese el nombre:
+    <input type="text" name="nombre">
+    <br>
+    Deportes que practica:<br>
+    <input type="checkbox" name="check1">Fútbol
+    <br>
+    <input type="checkbox" name="check2">Basquet
+    <br>
+    <input type="checkbox" name="check3">Tenis
+    <br>
+    <input type="checkbox" name="check4">Voley
+    <br>
+    <input type="submit" value="confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+
+Pag: 2
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+
+  $cant = 0;
+  if (isset($_REQUEST['check1'])) {
+    $cant++;
+  }
+  if (isset($_REQUEST['check2'])) {
+    $cant++;
+  }
+  if (isset($_REQUEST['check3'])) {
+    $cant++;
+  }
+  if (isset($_REQUEST['check4'])) {
+    $cant++;
+  }
+  echo $_REQUEST['nombre'];
+  echo " practica $cant deportes."
+  ?>
+
+</body>
+
+</html>
+
+
+
+Formulario con RadioButton:
+
+Pag:1
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <form action="Eje1.1.php" method="post">
+    Ingrese Nombre:
+    <input type="text" name="nombre">
+    <br>
+    Estudios:
+    <br>
+    <input type="radio" name="radio1" value="sin">Sin estudios
+    <br>
+    <input type="radio" name="radio1" value="primario">Estudios primarios
+    <br>
+    <input type="radio" name="radio1" value="secundario">Estudios secundarios
+    <br>
+    <input type="submit" value="Confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+Pag:2
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  echo $_REQUEST['nombre'];
+  echo "<br>";
+  if ($_REQUEST['radio1'] == "sin") {
+    echo "Sin estudios.";
+  }
+  if ($_REQUEST['radio1'] == "primario") {
+    echo "Estudios primarios.";
+  }
+  if ($_REQUEST['radio1'] == "secundario") {
+    echo "Estudios secundarios.";
+  }
+
+  ?>
+
+</body>
+
+</html>
+
+
+
+
+
+
+Formulario con Caja de opciones:
+
+Pag:1
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <form action="Eje1.1.php" method="post">
+    Ingrese primer valor:
+    <input type="text" name="valor1">
+    <br>
+    Ingrese segundo valor:
+    <input type="text" name="valor2">
+    <br>
+    <select name="operacion">
+      <option value="suma">sumar</option>
+      <option value="resta">restar</option>
+    </select>
+    <br>
+    <input type="submit" name="operar">
+  </form>
+</body>
+
+</html>
+
+
+Pag : 2
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <?php
+  if ($_REQUEST['operacion'] == "suma") {
+    $suma = $_REQUEST['valor1'] + $_REQUEST['valor2'];
+    echo "La suma es:" . $suma;
+  } else {
+    if ($_REQUEST['operacion'] == "resta") {
+      $resta = $_REQUEST['valor1'] - $_REQUEST['valor2'];
+      echo "La resta es:" . $resta;
+    }
+  }
+  ?>
+</body>
+
+</html>
+
+
+
+
+
+Formulario con Cuadro de texto:
+
+pag 1:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <form action="Eje1.1.php" method="post">
+    Completar contrato:<br>
+    <textarea name="contrato" rows="8" cols="80">
+En la ciudad de [........], se acuerda entre la Empresa [..........] representada por el Sr. [..............] en su carácter de Apoderado, con domicilio en la calle [..............] y el Sr. [..............], futuro empleado con domicilio en [..............], celebrar el presente contrato a Plazo Fijo, de acuerdo a la normativa vigente de los artículos 90,92,93,94, 95 y concordantes de la Ley de Contrato de Trabajo N° 20.744.
+</textarea>
+    <br>
+    <input type="submit" value="Confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+pag 2:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  echo $_REQUEST['contrato'];
+
+  ?>
+
+</body>
+
+</html>
+
+
+
+
+Vectores:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  $nombres[] = "juan";
+  $nombres[] = "pedro";
+  $nombres[] = "ana";
+  for ($f = 0; $f < count($nombres); $f++) {
+    echo $nombres[$f];
+    echo "<br>";
+  }
+  ?>
+
+</body>
+
+</html>
+
+
+
+Creacion de un archivo de texto:
+
+Pag 1:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <form method="post" action="Eje1.1.php">
+    Nombre:
+    <input type="text" name="nombre" size="30">
+    <br>
+    Dirección:
+    <input type="text" name="direccion" size="40">
+    <br>
+    Jamon y Queso:
+    <input type="checkbox" name="jamonqueso">
+    <input type="text" name="cantjamonqueso" size="3">
+    <br>
+    Napolitana:
+    <input type="checkbox" name="napolitana">
+    <input type="text" name="cantnapolitana" size="3">
+    <br>
+    Muzzarella:
+    <input type="checkbox" name="muzzarella">
+    <input type="text" name="cantmuzzarella" size="3">
+    <br>
+    <input type="submit" value="Confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+Pag 2:
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  $ar = fopen("datos.txt", "a") or
+    die("Problemas en la creacion");
+  fputs($ar, "Nombre:");
+  fputs($ar, $_REQUEST['nombre']);
+  fputs($ar, "\n");
+  fputs($ar, "Dirección:");
+  fputs($ar, $_REQUEST['direccion']);
+  fputs($ar, "\n");
+  if (isset($_REQUEST['jamonqueso'])) {
+    fputs($ar, "Cantidad de Jamón y Queso:");
+    fputs($ar, $_REQUEST['cantjamonqueso']);
+    fputs($ar, "\n");
+  }
+  if (isset($_REQUEST['napolitana'])) {
+    fputs($ar, "Cantidad de Napolitana:");
+    fputs($ar, $_REQUEST['cantnapolitana']);
+    fputs($ar, "\n");
+  }
+  if (isset($_REQUEST['muzzarella'])) {
+    fputs($ar, "Cantidad de Muzzarella:");
+    fputs($ar, $_REQUEST['cantmuzzarella']);
+    fputs($ar, "\n");
+  }
+
+  fputs($ar, "--------------------------------------------------------");
+  fputs($ar, "\n");
+  fclose($ar);
+  echo "El pedido se cargó correctamente.";
+  ?>
+
+</body>
+
+</html>
+
+
+
+
+Abrir archivo txt con los datos:
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  $ar = fopen("pedidos.txt", "r") or
+    die("No se pudo abrir el archivo");
+  while (!feof($ar)) {
+    $linea = fgets($ar);
+    $lineasalto = nl2br($linea);
+    echo $lineasalto;
+  }
+  fclose($ar);
+  ?>
+
+</body>
+
+</html>
+
+
+
+
+Vectores asociativos:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  $clave['ana'] = "abc123";
+  $clave['luis'] = "z67yui";
+  $clave['carlos'] = "sdf3sdf";
+  $clave['laura'] = "dsf3k32";
+  $clave['pedro'] = "axldds23";
+
+  echo "La clave de luis es:" . $clave['luis'];
+  ?>
+
+</body>
+
+</html>
+
+
+
+Funciones en php:
+
+Pagi 1
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <form action="Eje1.1.php" method="post">
+    Ingrese nombre de usuario:
+    <input type="text" name="usuario">
+    <br>
+    Ingrese su clave:
+    <input type="password" name="clave1">
+    <br>
+    Repita la clave
+    <input type="password" name="clave2">
+    <br>
+    <input type="submit" name="Confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+Pagi 2:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+
+  function verificarClaves($cla1, $cla2)
+  {
+    if ($cla1 != $cla2)
+      echo "Las claves ingresadas son distintas";
+  }
+
+  verificarClaves($_REQUEST['clave1'], $_REQUEST['clave2']);
+
+  ?>
+  <h2>Se verificaron las claves ingresadas.</h2>
+</body>
+
+</html>
+
+
+
+				Base de datos
+
+
+Insert:
+
+Pag 1:
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <form action="Eje1.1.php" method="post">
+    Ingrese nombre del curso:
+    <input type="text" name="nombrecurso" size="40">
+    <br>
+    <input type="submit" value="Confirmar">
+  </form>
+
+</body>
+
+</html>
+
+
+
+Pag 2:
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <?php
+  $conexion = mysqli_connect("localhost", "root", "", "base1") or
+    die("Problemas con la conexión");
+
+  mysqli_query($conexion, "insert into cursos(nombrecurso) values ('$_REQUEST[nombrecurso]')") or
+    die("Problemas en el select" . mysqli_error($conexion));
+
+  mysqli_close($conexion);
+
+  echo "El curso fue dado de alta.";
+  ?>
+</body>
+
+</html>
+
+
+
+
+
+Desplegar lista de Inserts
+
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+
+  <?php
+  $conexion = mysqli_connect("localhost", "root", "", "base1") or
+    die("Problemas con la conexión");
+
+  $registros = mysqli_query($conexion, "select codigo,nombrecurso from cursos") or
+    die("Problemas en el select:" . mysqli_error($conexion));
+
+  while ($reg = mysqli_fetch_array($registros)) {
+    echo "Codigo:" . $reg['codigo'] . "<br>";
+    echo "Nombre del curso:" . $reg['nombrecurso'] . "<br>";
+    echo "<hr>";
+  }
+
+  mysqli_close($conexion);
+  ?>
+
+</body>
+
+</html>
+
+
+
+Eliminar dato de la lista:
+
+
+Pagin 1:
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <form action="Eje1.1.php" method="post">
+    Ingrese nombre del curso a borrar:
+    <input type="text" name="nombrecurso">
+    <br>
+    <input type="submit" value="Borrar">
+  </form>
+</body>
+
+</html>
+
+
+Pagina 2:
+
+
+
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<body>
+  <?php
+  $conexion = mysqli_connect("localhost", "root", "", "base1") or
+    die("Problemas con la conexión");
+
+  $registros = mysqli_query($conexion, "select codigo from cursos
+                        where nombrecurso='$_REQUEST[nombrecurso]'") or
+    die("Problemas en el select:" . mysqli_error($conexion));
+  if ($reg = mysqli_fetch_array($registros)) {
+    mysqli_query($conexion, "delete from cursos where nombrecurso='$_REQUEST[nombrecurso]'") or
+      die("Problemas en el select:" . mysqli_error($conexion));
+    echo "Se efectuó el borrado del curso ingresado.";
+  } else {
+    echo "No existe un curso con dicho nombre.";
+  }
+  mysqli_close($conexion);
+  ?>
+</body>
+
+</html>
+
+
+
+Generar consulta por iniciales
+
+<html>
+<head>
+<title>Problema</title>
+</head>
+<body>
+  <form method="POST" action="">
+    <label for="apellido">Inicial del Apellido:</label>
+    <input type="text" id="apellido" name="apellido" maxlength="3">
+    <input type="submit" value="Buscar">
+  </form>
+
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $conexion = mysqli_connect("localhost", "root", "", "base1") or die("Problemas con la conexión");
+
+    $inicial = $_POST['apellido'];
+
+    $consulta = "SELECT codigo, Apellido FROM nombre WHERE Apellido LIKE '$inicial%'";
+    $registros = mysqli_query($conexion, $consulta) or die("Problemas en el select: " . mysqli_error($conexion));
+
+    if (mysqli_num_rows($registros) === 0) {
+      echo "No se encontraron registros.";
+    } else {
+      while ($reg = mysqli_fetch_array($registros)) {
+        echo "Código: " . $reg['codigo'] . "<br>";
+        echo "Apellido: " . $reg['Apellido'] . "<br>";
+        echo "<hr>";
+      }
+    }
+
+    mysqli_close($conexion);
+  }
+  ?>
+</body>
+</html>
+
+
