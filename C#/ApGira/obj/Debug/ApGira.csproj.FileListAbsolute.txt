@@ -1,0 +1,10 @@
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\bin\Debug\ApGira.exe.config
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\bin\Debug\ApGira.exe
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\bin\Debug\ApGira.pdb
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.csproj.AssemblyReference.cache
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.Form1.resources
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.Properties.Resources.resources
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.csproj.GenerateResource.cache
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.csproj.CoreCompileInputs.cache
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.exe
+C:\Users\celes\OneDrive\Escritorio\6-cuatri\ApGira\obj\Debug\ApGira.pdb
