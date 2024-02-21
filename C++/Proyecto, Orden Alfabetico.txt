@@ -1,0 +1,167 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+#include <string>
+#include <set>
+
+using namespace :: std;
+
+struct Nodo{
+	string nombre;
+	Nodo*siguiente;
+	Nodo*atras;
+}	*primero,*ultimo;
+
+void Menu();
+void Insertar(Nodo *&nodo,string nombre);
+void Mostrar(Nodo *);
+Nodo *nodo = NULL;
+
+
+int main() {
+	
+	Menu();	
+	return 0;	
+}
+
+void Menu(){
+	int opcion = 0;
+	string nombre;
+	
+	do{
+		system("cls");
+		cout << "-------------------" << endl;
+		cout << "1. Insertar        " << endl;
+		cout << "2. Mostrar         " << endl;
+		cout << "3. Salir           " << endl;
+		cout << "-------------------" << endl;
+		cin >> opcion;
+		
+		switch(opcion){
+			case 1:
+				cout << "Ingrese el nombre ";
+				getline(cin>> ws,nombre);
+				Insertar(nodo,nombre);
+				break;
+			case 2:
+				Mostrar(nodo);
+				break;
+			case 3:
+				break;
+			default:
+				cout << endl << "Opcion no valida" << endl;
+		}
+		
+	}while(opcion != 3);
+}
+
+
+void Insertar(Nodo *&nodo,string nombre){
+	system("cls");
+	
+	Nodo *nuevo = new Nodo();
+	nuevo->nombre = nombre;
+	
+	Nodo *aux1 = nodo;
+	Nodo *aux2;
+	
+	while((aux1 != NULL) && (aux1->nombre < nombre)){
+		aux2 = aux1;
+		aux1 = aux1->siguiente;
+	}
+	if(nodo == aux1){
+		nodo = nuevo;
+		primero=nuevo;
+		primero->siguiente=NULL;
+		primero->atras=NULL;
+		ultimo=primero;
+
+	//	nodo = nuevo;
+	}else{
+		aux2 -> siguiente = nuevo;
+	//	ultimo->siguiente= nuevo;
+		nuevo->siguiente = NULL;
+		nuevo->atras=ultimo;
+		ultimo=nuevo;
+
+	//	aux2 -> siguiente = nuevo;
+	}
+	
+	nuevo -> siguiente = aux1;
+	cout<<"\nEl elemento "<<nombre<< " insertado correctamente\n";
+
+	
+	system("pause");
+}
+
+void Mostrar(Nodo *nodo){
+	system("cls");
+	
+	Nodo *actual = new Nodo();
+	actual = nodo;
+	
+	while(actual !=NULL ){
+		cout<<actual->nombre<<" -> ";
+		actual = actual->siguiente;
+	}
+	
+	system("pause");
+	
+}
+
+Ana Francisca Armira Carreto
+Ana Lucia Leiva García 
+Byron Aroldo Estrada Rodriguez
+César Augusto Valenzuela Alfaro
+Maritza Noemi Molina Orellana de Garcia
+Osvaldo Tavique Colay
+
+
+
+AGUILAR JARA MARIA ISABEL
+AGUILAR LOJA MANUEL EDUARDO
+ZHINA TENESCA NORMA PATRICIA
+ZHINGRE PINOS DIGNA PATRICIA
+
+
+
+
+
+ void buscarNodo(Nodo*lista){
+	
+	Nodo*actual=new Nodo();
+	actual=primero;
+	string nodoEncontrado= "";
+	cout<<"\n Ingrese el valor a buscar :  ";
+	cin>>nodoEncontrado;
+
+
+	cout<<"Lista de Nombres con la Letra: \n "<<nodoEncontrado;
+	if(primero !=NULL){
+		
+		while(actual !=NULL){
+				string nombre = actual->nombre;
+			
+        if (nombre.length() > 0 && nombre[0] == 'A' || nombre.length() > 0 && nombre[0] == 'a') {
+        
+            cout<< actual->nombre << "\n";
+
+        }else if(nombre.length() > 0 && nombre[0] == 'B' || nombre.length() > 0 && nombre[0] == 'b'){
+        	 cout<< actual->nombre << "\n";
+		}
+        actual = actual->siguiente;
+		}
+		
+
+		
+	}else{
+		cout<<"\n la lista esta vacia";
+	}
+
+    	system("pause");
+
+} 
+
+
+
+
